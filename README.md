@@ -376,7 +376,7 @@ second list contains the email accounts of the participants in your most recent 
 viewed your most recent promotional email.
 
 In business terms, you need to:
-* Create a list of those who have not seen your promotional email yet. The list will
+* Create a list of those clients who have not seen your promotional email yet. The list will
 be sent to the call center to reach those people.
 * Create a list of the participants who are not your clients. You will send them an
 introductory email about your products.
@@ -393,7 +393,7 @@ is given, raise an exception.
 * For this exercise you need to use the following three lists:
 
       clients = ['andrew@gmail.com', 'jessica@gmail.com', 'ted@mosby.com',
-      'john@snow.is', 'bill\_gates@live.com', 'mark@facebook.com',
+      'john@snow.is', 'bill_gates@live.com', 'mark@facebook.com',
       'elon@paypal.com', 'jessica@gmail.com']
       participants = ['walter@heisenberg.com', 'vasily@mail.ru',
       'pinkman@yo.org', 'jessica@gmail.com', 'elon@paypal.com',
