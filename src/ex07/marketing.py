@@ -23,7 +23,7 @@ def lists_to_set():
         else:
             print("wrong name of argument\nselect one of these commands\ncall_center || potential_clients || loyalty_program")
     else:
-        print("There can only be one argument here")
+        print("incorrect number of arguments is given")  
 
 
 if __name__ == '__main__':
