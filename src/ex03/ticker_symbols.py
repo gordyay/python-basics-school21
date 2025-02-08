@@ -1,5 +1,12 @@
 import sys
-def calc_price():
+
+def get_key(dict, value):
+    for key, val in dict.items():
+        if val == value:
+            return key
+
+
+def ticker_price():
     COMPANIES = {
         'Apple': 'AAPL',
         'Microsoft': 'MSFT',
@@ -15,14 +22,17 @@ def calc_price():
         'NOK': 3.37
     }
     
+
     if (len(sys.argv)==2):
-        name = sys.argv[1].capitalize()
-        if name in COMPANIES:
-            tick = COMPANIES[name]
-            print (STOCKS[tick])
+        ticker_name = sys.argv[1].upper()
+        company_name = get_key(COMPANIES, ticker_name)
+        if company_name:
+            print (company_name, STOCKS[ticker_name])
         else:
-            print("Unknown company", name)
+                    print("Unknown ticker")
+
+
 
 
 if __name__ == '__main__':
-    calc_price()
+    ticker_price()
